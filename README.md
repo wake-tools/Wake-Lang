@@ -8,6 +8,36 @@
 Wake Lang is a lightweight, C-based scripting language built to run **instantly** inside the [Wake JIT Engine](https://github.com/wake-tools/Wake).  
 It allows live execution, rapid prototyping, and direct interaction with native libraries — no compilation delay, no overhead.
 
+Wake language is **branchless, deterministic, and linear** — a language designed to be *followed, not guessed*.
+
+There are no hidden branches, no random states, and no ambiguous logic.  
+Every line executes in the exact order it’s written — **clear, predictable, and easy to trace**.
+
+---
+
+| Principle | Description |
+|:-----------|:-------------|
+| **Branchless** | No `if`, `else`, or branching logic. Wake Lang focuses on describing **flows**, not decisions. |
+| **Deterministic** | Every execution produces the same result — no race conditions, no state drift, no randomness. |
+| **Linear** | Commands flow top-to-bottom in a perfectly ordered sequence — you can literally read it like a book. |
+| **Traceable** | The execution path is obvious at all times. There’s no hidden logic — what you see *is exactly what happens*. |
+
+---
+
+### 💡 Why it matters
+
+This design makes Wake Lang:
+
+- 🧩 **Exceptionally easy to read** — anyone can open a `.jc` file and instantly understand what it does.  
+- 🚀 **Fast to learn** — no complex syntax, no nested logic, no mental gymnastics.  
+- ⚙️ **Efficient to maintain** — every instruction is self-contained and predictable.  
+- 🕒 **Time-saving** — less debugging, fewer side effects, faster iteration.  
+- 🧠 **Mentally lightweight** — scripts are linear and composable; no context-switching required.
+
+> ⚡ *By removing branching and ambiguity, Wake Lang achieves what most languages can’t:*  
+> *a perfectly predictable, visual, and human-readable flow of execution.*
+
+
 ---
 
 ### 🚀 Highlights
