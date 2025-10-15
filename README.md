@@ -113,3 +113,32 @@ They make scripts **portable and self-adaptive**, automatically resolving to the
 > 🧩 *These variables are automatically provided by the Wake runtime and resolved before command execution. They ensure scripts remain consistent across environments, architectures, and build modes.*
 
 ---
+
+### 📦  Package Resolution System 
+
+Wake Lang relies on a **strict, deterministic, and secure package system** —  
+ensuring that every dependency is *perfectly resolved*, *cryptographically verified*, and *immutable* once installed.
+
+Whenever a path like `{wk.module.sys.r}wake-tools/tcc-v0.1w/tcc` is referenced, Wake will:
+
+1. 🧩 **Detect the package name** (`wake-tools/tcc-v0.1w`)  
+2. 🔍 **Check if it exists** locally under `{wk.module.sys.r}`  
+3. 🌐 **Fetch it automatically** if missing (via Wake’s signed `.wpkg` format)  
+4. 🔏 **Verify its Ed25519 signature** and ensure integrity before mounting  
+5. ⚙️ **Load and execute** the referenced tool or library instantly — no setup, no rebuild
+
+---
+
+| Icon | Component | Description | Example |
+|:----:|:-----------|:-------------|:---------|
+| 📦 | `.wpkg` | Wake Package — compressed and signed module archive. | `tcc-v0.1w.wpkg` |
+| 🧱 | `{wk.module.sys.r}` | System package root (release mode). | `wake/runtime/module/w64-r/` |
+| 🌍 | `wake-tools/<package>` | Remote namespace or repository source. | `wake-tools/tcc-v0.1w` |
+| ⚙️ | `.sm` | Optional submodule containing runtime metadata or preload. | `.sm/clear-sapp.sm` |
+
+> 🔒 *All Wake packages are cryptographically signed and resolved deterministically.  
+They cannot be overridden or tampered with — ensuring a stable, reproducible, and secure runtime.*
+
+> 🧩 *Wake automatically fetches missing packages, verifies signatures, and loads them live — enabling scripts to run anywhere without setup.*
+
+---
