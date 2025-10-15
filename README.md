@@ -132,10 +132,10 @@ They make scripts **portable and self-adaptive**, automatically resolving to the
 | `{wk.include}` | Absolute path to the include directory for Wake headers and packages. | `wake/runtime/include/` |
 | `{wk.libs}` | Absolute path to the Wake runtime libraries. | `wake/runtime/libs/` |
 | `{wk.module}` | Absolute path to the Wake system modules. | `wake/runtime/module/` |
-| `{wk.module.sys}` | Absolute path to the Wake system modules in **current mode**. | `wake/runtime/module/w64-d/` (debug)  |
+| `{wk.module.sys}` | Absolute path to the Wake system modules in **current mode**. | `wake/runtime/module/w64-d/` _(debug)_  |
 | `{wk.module.sys.d}` | Absolute path to the Wake system modules in **debug mode**. | `wake/runtime/module/w64-d/` |
 | `{wk.module.sys.r}` | Absolute path to the Wake system modules in **release mode**. | `wake/runtime/module/w64-r/` |
-| `{build.sys}` | Build system identifier for **current mode**. | `win64-d` (debug) |
+| `{build.sys}` | Build system identifier for **current mode**. | `win64-d` _(debug)_ |
 | `{build.sys.d}` | Build system identifier for **debug mode**. | `win64-d` |
 | `{build.sys.r}` | Build system identifier for **release mode**. | `win64-r` |
 | `{this.file}` | Reference to the current `.jc` file being executed. | `samples/hello.jc` |
