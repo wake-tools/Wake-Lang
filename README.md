@@ -34,7 +34,7 @@ This design translates directly into real-world efficiency:
   making it ideal for live scripting, dynamic pipelines, and tool integration.  
 
 > 💡 *You can read a Wake Lang program like a book — from start to finish, with no surprises.*
-
+>
 > ⚡ *By removing branching and ambiguity, Wake Lang achieves what most languages can’t:*  
 > *a perfectly predictable, visual, and human-readable flow of execution.*
 
@@ -168,7 +168,7 @@ Whenever a path like `{wk.module.sys.r}wake-tools/tcc-v0.1w/tcc` is referenced, 
 
 > 🔒 *All Wake packages are cryptographically signed and resolved deterministically.  
 They cannot be overridden or tampered with — ensuring a stable, reproducible, and secure runtime.*
-
+>
 > 🧩 *Wake automatically fetches missing packages, verifies signatures, and loads them live — enabling scripts to run anywhere without setup.*
 
 ---
