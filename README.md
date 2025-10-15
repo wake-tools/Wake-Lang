@@ -26,17 +26,11 @@ Because the language is **purely linear**, it stays *ultra simple* — not just 
 This design translates directly into real-world efficiency:
 
 - 🧠 **Effortless to read** — anyone can open a `.jc` file and instantly understand what it does.  
-- 📘 **Fast to learn** — Wake Lang’s flow is intuitive; there’s nothing to memorize beyond its natural order.  
 - ⚙️ **Reduced development time** — no conditional logic, no side effects, no debugging maze.  
-- 🪶 **Light on cognition** — every instruction follows logically from the last; no mental branching required.  
 - 🔁 **Perfectly reproducible** — deterministic execution ensures identical results every run.  
 - 🧩 **Embeddable** — Wake Lang can be embedded directly inside other languages (like C, C++, or Python),  
   making it ideal for live scripting, dynamic pipelines, and tool integration.  
 
-> 💡 *You can read a Wake Lang program like a book — from start to finish, with no surprises.*
->
-> ⚡ *By removing branching and ambiguity, Wake Lang achieves what most languages can’t:*  
-> *a perfectly predictable, visual, and human-readable flow of execution.*
 
 ---
 
