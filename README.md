@@ -4,11 +4,6 @@
 
 ---
 
-### 📘 Documentation
-See the full documentation in the [**Wake Lang Wiki**](https://github.com/wake-tools/Wake-Lang/wiki).
-
----
-
 ### ⚙️ Overview
 Wake Lang is a lightweight, C-based scripting language built to run **instantly** inside the [Wake JIT Engine](https://github.com/wake-tools/Wake).  
 It allows live execution, rapid prototyping, and direct interaction with native libraries — no compilation delay, no overhead.
@@ -82,3 +77,22 @@ int main(void) {
 ```
 
 > Run it instantly inside the Wake environment, no build step required.
+
+
+---
+
+### 🔹 Built-in Variables
+
+Wake Lang exposes a few **core environment variables** that make scripts portable and modular.  
+They act as *JSON-like nodes*, automatically resolved by the Wake Runtime.
+
+| Variable | Description | Example Output |
+|:----------|:-------------|:----------------|
+| `{wk.include}` | Include directory for Wake headers and packages. | `D:/wake-tools/include/` |
+| `{wk.module.sys.r}` | Absolute path to the root of the Wake system modules. | `D:/wake-tools/` |
+| `{build.sys}` | Current build system name (no path). | `win64` |
+| `{build.sys.r}` | Absolute path to the active build system folder. | `D:/wake-tools/build/win64/` |
+
+> 🧩 These variables are **resolved dynamically at runtime**, ensuring that scripts run seamlessly across platforms and configurations.
+
+---
