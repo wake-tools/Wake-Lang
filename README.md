@@ -10,7 +10,7 @@ It allows live execution, rapid prototyping, and direct interaction with native 
 
 ---
 
-### 🧩 Branchless by Design
+### 🧩 Branchless
 
 Wake Lang is **branchless, deterministic, and linear** — a language designed to be *followed, not guessed*.
 
