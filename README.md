@@ -127,7 +127,7 @@ They are used inside the `<:jit:>` block to provide *live reactivity* and *depen
 Wake Lang exposes several **core environment variables** that provide context about the runtime, build system, and file paths.  
 They make scripts **portable and self-adaptive**, automatically resolving to the correct directories depending on the platform and mode.
 
-| Variable | Description | Example Output |
+| Variable | Description | Example Output (debug mode) |
 |:----------|:-------------|:----------------|
 | `{wk.include}` | Absolute path to the include directory for Wake headers and packages. | `wake/runtime/include/` |
 | `{wk.libs}` | Absolute path to the Wake runtime libraries. | `wake/runtime/libs/` |
