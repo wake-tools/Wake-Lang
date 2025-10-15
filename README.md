@@ -10,7 +10,7 @@ It allows live execution, rapid prototyping, and direct interaction with native 
 
 ---
 
-### 🧩 Branchless
+### 🧩 Branchless Philosophy
 
 Wake Lang is **branchless, deterministic, and linear** — a language designed to be *followed, not guessed*.
 
@@ -30,6 +30,8 @@ This design translates directly into real-world efficiency:
 - ⚙️ **Reduced development time** — no conditional logic, no side effects, no debugging maze.  
 - 🪶 **Light on cognition** — every instruction follows logically from the last; no mental branching required.  
 - 🔁 **Perfectly reproducible** — deterministic execution ensures identical results every run.  
+- 🧩 **Embeddable** — Wake Lang can be embedded directly inside other languages (like C, C++, or Python),  
+  making it ideal for live scripting, dynamic pipelines, and tool integration.  
 
 > 💡 *You can read a Wake Lang program like a book — from start to finish, with no surprises.*
 
