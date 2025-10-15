@@ -12,14 +12,14 @@ It allows live execution, rapid prototyping, and direct interaction with native 
 
 ### 🧩 Branchless Philosophy
 
-Wake Lang is **branchless, deterministic, and linear** — a language designed to be *followed, not guessed*.
+Wake Lang is **branchless, deterministic, and linear** —> a language designed to be *followed, not guessed*.
 
 There are no hidden branches, no random states, and no ambiguous logic.  
-Every line executes in the exact order it’s written — **clear, predictable, and easy to trace**.
+Every line executes in the exact order it’s written 
+> **Clear, Predictable, Easy to trace**.
 
----
 
-### ✨ Simplicity by Design
+####  Simplicity by Design
 
 Because the language is **purely linear**, it stays *ultra simple* — not just in syntax, but in the way you think, read, and build.
 
