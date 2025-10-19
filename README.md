@@ -1,4 +1,4 @@
-# >| {Wake Lang}
+# >| [{Wake-Lang}](https://github.com/wake-tools/Wake-Lang)
 
 > The live scripting language of the **Wake JIT Engine** — designed for instant execution, modularity, and creativity.
 
