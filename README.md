@@ -1,4 +1,4 @@
-# 🌀 Wake Lang
+# >| {Wake Lang}
 
 > The live scripting language of the **Wake JIT Engine** — designed for instant execution, modularity, and creativity.
 
@@ -39,13 +39,6 @@ This design translates directly into real-world efficiency:
 - **C99 syntax** — familiar, minimal, and powerful.  
 - **Modular runtime** — directly integrated with Wake Tools and Wake Packages (.wpkg).  
 - **Cross-platform** — Windows, Linux, and macOS.  
-
----
-
-### 🧩 Ecosystem
-- 🔹 [Wake JIT Engine](https://github.com/wake-tools/Wake) — the runtime powering Wake Lang  
-- 🔹 [Wake Tools](https://github.com/wake-tools/Wake-Tools) — standard packages and utilities  
-- 🔹 [Wake Lang Wiki](https://github.com/wake-tools/Wake-Lang/wiki) — full reference and examples  
 
 ---
 
