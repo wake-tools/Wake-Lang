@@ -64,7 +64,7 @@ int main(void) {
 ---
 ### 🔹 Execution Metadata
 
-Define how Wake builds and runs JIT code, through nested instructions layered on top of any language.
+Define how Wake builds and runs JIT code, through nested instructions.
 
 | Tag | Purpose | Description |
 |:----:|:---------|:-------------|
