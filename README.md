@@ -1,44 +1,24 @@
-# >| [{Wake-Lang}](https://github.com/wake-tools/Wake-Lang)
+# [>|](https://github.com/wake-tools/Wake-Lang) {Wake-Lang}
 
 > The live scripting language of the **Wake JIT Engine** — designed for instant execution, modularity, and creativity.
 
 ---
 
-### ⚙️ Overview
+###  Overview
 Wake Lang is a lightweight, C-based scripting language built to run **instantly** inside the [Wake JIT Engine](https://github.com/wake-tools/Wake).  
 It allows live execution, rapid prototyping, and direct interaction with native libraries — no compilation delay, no overhead.
 
 ---
 
-### 🧩 Branchless Philosophy
+###  Branchless Philosophy
 
 Wake Lang is **branchless, deterministic, and linear** —> a language designed to be *followed, not guessed*.
 
-There are no hidden branches, no random states, and no ambiguous logic.  
-Every line executes in the exact order it’s written 
-> **Clear, Predictable, Easy to trace**.
-
-
-####  Simplicity by Design
-
-Because the language is **purely linear**, it stays *ultra simple* — not just in syntax, but in the way you think, read, and build.
-
-This design translates directly into real-world efficiency:
-
-- 🧠 **Effortless to read** — anyone can open a `.jc` file and instantly understand what it does.  
-- ⚙️ **Reduced development time** — no conditional logic, no side effects, no debugging maze.  
-- 🔁 **Perfectly reproducible** — deterministic execution ensures identical results every run.  
-- 🧩 **Embeddable** — Wake Lang can be embedded directly inside other languages (like C, C++, or Python),  
-  making it ideal for live scripting, dynamic pipelines, and tool integration.  
-
-
----
-
-### 🚀 Highlights
-- **Real-time execution** — scripts compile and run instantly.  
-- **C99 syntax** — familiar, minimal, and powerful.  
-- **Modular runtime** — directly integrated with Wake Tools and Wake Packages (.wpkg).  
-- **Cross-platform** — Windows, Linux, and macOS.  
+-  **Effortless to read** — anyone can open a `.jc` file and instantly understand what it does.
+-  **Reduced development time** — no conditional logic, no side effects, no debugging maze.
+-  **Perfectly reproducible** — deterministic execution ensures identical results every run.
+-  **Embeddable** — Wake Lang can be embedded directly inside other languages (like C, C++, or Python),
+  making it ideal for live scripting, dynamic pipelines, and tool integration.
 
 ---
 
