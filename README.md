@@ -33,7 +33,7 @@ Wake Lang is **branchless, deterministic, and linear** —> a language designed 
 ---
 
 ### Typical language from
-```c
+```bash
 build | build > run
 ```
 
