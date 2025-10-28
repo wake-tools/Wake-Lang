@@ -22,7 +22,7 @@ Wake Lang is **branchless, deterministic, and linear** —> a language designed 
 
 ---
 
-### 🔹 Core Syntax (currently implemented)
+### 🔹 Core Syntax
 
 | Symbol | Purpose | Description |
 |:-------:|:---------|:-------------|
@@ -40,12 +40,12 @@ build | build > run
 ### Minimal example
 ```c
 /*|------------------------------------------------------------>>
-  | run: wake > hello.jc
+  | wake > hello.jc
   |------------------------------------------------------------>>
     <:jit:w32|w64>
         {wk.module.sys.r}wake-tools/tcc-v0.1w/tcc
             -xc -shared {this.file}
-            -o {jit.file}
+            -o hello.sm
         >
         #Jit.reload
     <:/jit:>
