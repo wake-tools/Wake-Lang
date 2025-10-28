@@ -6,7 +6,7 @@
 
 ###  Overview
 Wake Lang is a lightweight, C-based scripting language built to run **instantly** inside the [Wake JIT Engine](https://github.com/wake-tools/Wake).  
-It allows live feedback, rapid prototyping, and direct interaction with libraries
+It allows live feedback, rapid prototyping, and direct interaction with modules & libraries
 
 ---
 
