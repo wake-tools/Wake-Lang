@@ -64,15 +64,14 @@ int main(void) {
 ---
 ### 🔹 Execution Metadata
 
-Execution metadata defines **how a Wake Lang script is built and executed**.  
-These tags can appear at the beginning of a file — or even *inside C code blocks* — allowing **dynamic recompilation**, *runtime code injection*, or *conditional JIT execution*.
+Define how Wake builds and runs JIT code, through nested instructions layered on top of any language.
 
 | Tag | Purpose | Description |
 |:----:|:---------|:-------------|
 | `<:jit:>` | JIT Block | Defines how the file is compiled and executed in Wake. |
 | `<:/jit:>` | JIT End Block | Defines how the file is compiled and executed in Wake. |
 | `w32 \| w64` | Target | Indicates 32-bit or 64-bit platform targets. |
->  *Execution metadata can live both **around** and **within** code — enabling nested instructions, live recompilation, and self-modifying scripts.*
+>  *Execution metadata, enabling nested instructions*
 ---
 
 ### 🔹 Execution Directives
@@ -85,7 +84,7 @@ They are used inside the `<:jit:>` block to provide *live reactivity* and *depen
 | `#Jit.reload` | Reload Directive | Reloads and executes the compiled code instantly, and automatically when the file is modified. |
 | `#Jit.depends` | Dependency Directive | Registers one or more files as dependencies; triggers reload when any of them is modified. |
 
->  *Execution directives bring Wake Lang to life — enabling live editing, auto-reload, and hot dependency tracking.*
+> *Feature auto-reload with dependency tracking.*
 
 ---
 
