@@ -37,7 +37,7 @@ Wake Lang is **branchless, deterministic, and linear** —> a language designed 
 build | build > run
 ```
 
-### Example (Hello 2 Shaders)
+### Example (2 Shaders build simultaneously)
 ```c
 /*|------------------------------------------------------------>>
   | wake hello.jc
