@@ -40,7 +40,7 @@ build | build > run
 ### Minimal example
 ```c
 /*|------------------------------------------------------------>>
-  | wake > hello.jc
+  | wake hello.jc
   |------------------------------------------------------------>>
     <:jit:w32|w64>
         {wk.module.sys.r}wake-tools/tcc-v0.1w/tcc
