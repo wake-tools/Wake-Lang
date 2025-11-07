@@ -40,7 +40,7 @@ build | build > run
 ### Example (2 Shaders build simultaneously)
 ```c
 /*|------------------------------------------------------------>>
-  | wake hello.jc
+  | wake hello_shader.jc
   |------------------------------------------------------------>>
     <:jit:w32|w64>
         |{wk.module.hsys.r}wake-tools/shdc-v0.1w/sokol-shdc --input shader1.glsl --output shader1.glslh --slang hlsl4
@@ -59,7 +59,7 @@ build | build > run
 #icnlude "shader2.glslh"
 
 int main(void) {
-    printf("Hello, Wake!\n");
+    printf("Hello, Wake!Shaders\n");
     return 0;
 }
 ```
