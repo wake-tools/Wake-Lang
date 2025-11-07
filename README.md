@@ -55,6 +55,8 @@ build | build > run
   |------------------------------------------------------------>>
 */
 #include <stdio.h>
+#icnlude "shader1.glslh"
+#icnlude "shader2.glslh"
 
 int main(void) {
     printf("Hello, Wake!\n");
