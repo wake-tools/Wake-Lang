@@ -37,12 +37,15 @@ Wake Lang is **branchless, deterministic, and linear** —> a language designed 
 build | build > run
 ```
 
-### Minimal example
+### Example (Hello 2 Shaders)
 ```c
 /*|------------------------------------------------------------>>
   | wake hello.jc
   |------------------------------------------------------------>>
     <:jit:w32|w64>
+        |{wk.module.hsys.r}wake-tools/shdc-v0.1w/sokol-shdc.exe --input shader1.glsl --output shader1.glslh --slang hlsl4
+        |{wk.module.hsys.r}wake-tools/shdc-v0.1w/sokol-shdc.exe --input shader2.glsl --output shader2.glslh --slang hlsl4
+		    >
         {wk.module.sys.r}wake-tools/tcc-v0.1w/tcc
             -xc -shared {this.file}
             -o hello.sm
