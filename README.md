@@ -29,8 +29,11 @@ Wake Lang is **branchless, deterministic, and linear** —> a language designed 
 | `>` | Sequence | Runs commands in order (waits for completion). |
 | `\|` | Parallel | Runs commands simultaneously. |
 | `{}` | Variables | Dynamic placeholders using JSON-like nodes. |
+| `&path` | Source | Tracks a source file or expands a source pattern. |
+| `~path` | Output | Declares the output derived from the current source. |
 
 ---
+
 
 ### Typical language from
 ```bash
@@ -140,5 +143,72 @@ Whenever a path like `{wk.module.sys.r}wake-tools/tcc-v0.1w/tcc` is referenced, 
 
 > All Wake packages are cryptographically signed and resolved deterministically.  
 > *It automatically fetches missing packages, verifies signatures, and loads them live.*
+
+---
+
+### Incremental commands and file expansion
+
+Wake can skip a command when all its outputs already exist and are at least as recent as its tracked sources:
+
+```wake
+cmd --input &vc_xform.glsl --output ~.sm/vc_xform.glslh
+```
+
+If the source is newer than the output, Wake runs the command. Otherwise it skips the command and prints:
+
+```text
+u: up-to-date: cmd --input vc_xform.glsl --output .sm/vc_xform.glslh
+```
+
+Use `--force-build` to run tracked commands regardless of timestamps. Missing sources or outputs always require a build.
+
+#### Search rules
+
+| Syntax | Search behavior |
+|:-------|:----------------|
+| `&src/` | Recursive folder shortcut; equivalent to `&src/**`. |
+| `&src/*` | Files directly inside `src/`; non-recursive. |
+| `&src/**` | Explicit recursive search below `src/`. |
+| `&src/hello*.cpp` | Direct filename filter. |
+| `&src/hello**.cpp` | Recursive filename filter. |
+
+`*` captures a filename portion inside one folder. `**` searches recursively from the preceding folder and preserves the matched relative path in the destination. Every expansion is reported with `e: expand: ...`; expanded commands execute in parallel while surrounding `>` sequence barriers remain intact.
+
+Direct expansion:
+
+```wake
+cmd -c &src/*.cpp -o ~out/*.o
+```
+
+```text
+cmd -c src/main.cpp -o out/main.o
+cmd -c src/game.cpp -o out/game.o
+```
+
+Recursive expansion:
+
+```wake
+cmd -c &src/**.cpp -o ~out/**.o
+```
+
+```text
+cmd -c src/main.cpp       -o out/main.o
+cmd -c src/math/vec.cpp   -o out/math/vec.o
+cmd -c src/render/gpu.cpp -o out/render/gpu.o
+```
+
+Recursive name filter:
+
+```wake
+cmd -c &src/hello**.cpp -o ~out/hello**.o
+```
+
+```text
+cmd -c src/hello.cpp            -o out/hello.o
+cmd -c src/math/hello_vec.cpp   -o out/math/hello_vec.o
+cmd -c src/render/hello_gpu.cpp -o out/render/hello_gpu.o
+```
+
+Prefer the explicit `*`/`**` distinction. Wake does not use `&&` to select non-recursive expansion.
 
 ---
